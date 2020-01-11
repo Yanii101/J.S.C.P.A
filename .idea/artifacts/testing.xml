@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="testing">
+    <output-path>$PROJECT_DIR$/out/artifacts/testing</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="main.Main" />
+        <option name="description" value="" />
+        <option name="height" value="570" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="my app" />
+        <option name="vendor" value="testing" />
+        <option name="version" value="" />
+        <option name="width" value="520" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="testing.jar">
+        <element id="module-output" name="testing" />
+      </element>
+    </root>
+  </artifact>
+</component>

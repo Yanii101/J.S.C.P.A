@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="570.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Datepicker">
+   <effect>
+      <InnerShadow />
+   </effect>
+   <children>
+      <Text layoutX="93.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the date to search for: " wrappingWidth="333.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="day" layoutX="39.0" layoutY="75.0" prefHeight="25.0" prefWidth="122.0" styleClass="topPane" stylesheets="@style.css">
+         <effect>
+            <Reflection />
+         </effect>
+      </ChoiceBox>
+      <ChoiceBox fx:id="year" layoutX="359.0" layoutY="75.0" prefHeight="25.0" prefWidth="102.0" styleClass="topPane" stylesheets="@style.css">
+         <effect>
+            <Reflection />
+         </effect>
+      </ChoiceBox>
+      <ChoiceBox fx:id="month" layoutX="203.0" layoutY="75.0" prefHeight="25.0" prefWidth="113.0" styleClass="topPane" stylesheets="@style.css">
+         <effect>
+            <Reflection />
+         </effect>
+      </ChoiceBox>
+      <Button layoutX="199.0" layoutY="141.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="122.0" text="Submit" />
+      <ImageView fitHeight="289.0" fitWidth="333.0" layoutX="121.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/calender.png" />
+         </image>
+      </ImageView>
+      <Text fill="#cd1313" layoutX="39.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#cd1313" layoutX="203.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#cd1313" layoutX="359.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

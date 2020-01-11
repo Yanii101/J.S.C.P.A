@@ -1,0 +1,73 @@
+.root{
+    -fx-background-color: mediumvioletred;
+}
+.cardPane{
+    -fx-background-color:#F7F7FF;
+    -fx-background-radius: 12px;
+}
+.topPane
+{
+    -fx-background-color: #C03221 ;
+    -fx-background-radius: 2px;
+}
+.button{
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+    /*-fx-effect:box-shadow 0 2px 10px rgba(0,0,0,0.5);*/
+}
+.border{
+    -fx-border-color: #C03221;
+    -fx-border-width: 3 2 2 3;
+    -fx-text-fill: #C03221;
+    -fx-background-color:#F7F7FF;
+    /*-fx-effect:box-shadow 0 2px 10px rgba(0,0,0,0.5);*/
+}
+.button:hover
+{
+    -fx-background-color: #F2D0A4;
+}
+.menu-item .label {
+    -fx-text-fill: white;
+    -fx-font-family: Arial Black;
+    -fx-font-weight:bold;
+    -fx-font-size:14px;
+}
+.menu-item:hover {
+    -fx-text-fill: white;
+    -fx-font-family: Arial Black;
+    -fx-font-weight:bold;
+    -fx-font-size:14px;
+}
+
+.menu-item:focused {
+     -fx-background-color: white;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill:Black;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: #C03221 ;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 6 6 6, 0 5 5 5, 0 4 4 4;
+/*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */
+}
+.makeapp
+{
+-fx-background-color:#FCEFF2;
+}
+.makeapp2
+{
+-fx-background-color:#FFFFFF;
+}
+.transparent
+{
+-fx-background-color: rgba(255, 255, 255, 0.8);
+-fx-background-insets: 30;
+/*-fx-background-color: transparent;
+-fx-opacity: 0.5;
+-fx-background-color: rgba(248, 248, 247, 0.5);*/
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="570.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Mainmenu">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="533.0" styleClass="topPane" stylesheets="@style.css">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="14.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/admin.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="126.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text fill="#eee7e7" layoutX="64.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="18.0" fitWidth="19.0" layoutX="434.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-logout-rounded-up-filled.png" />
+               </image>
+            </ImageView>
+            <Text fill="#e4e0e0" layoutX="452.0" layoutY="18.0" onMousePressed="#logout" strokeType="OUTSIDE" strokeWidth="0.0" text="LOG OUT">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Text>
+            <MenuBar fx:id="menubar" layoutX="289.0" layoutY="52.0" prefHeight="37.0" prefWidth="244.0" styleClass="menu-item" stylesheets="@style.css">
+              <menus>
+                <Menu mnemonicParsing="false" onAction="#clientvisit" text="Visits">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addappointment" text="Add Appointment" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateapp" text="Update Appointmnets" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewsingleapp" text="View Single Appointment" />
+                    <MenuItem mnemonicParsing="false" onAction="#viewallapp" text="View All  Appointment" />
+                        <MenuItem mnemonicParsing="false" onAction="#deleteapp" text="Delete Appointment" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#removals" text="Removals">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#addremoval" text="Add Removal" />
+                        <MenuItem mnemonicParsing="false" onAction="#updaterem" text="Update Removal" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewsingleremoval" text="View Single Removal" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewallremoval" text="View All Removal" />
+                        <MenuItem mnemonicParsing="false" onAction="#deleteremoval" text="Delete Removal" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" onAction="#reports" text="Reports">
+                  <items>
+                        <Menu mnemonicParsing="false" onAction="#clinicreport" text="Clinic Report">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#cliniclocationrep" text="Location Report" />
+                              <MenuItem mnemonicParsing="false" onAction="#clinicdaterep" text="Date Report" />
+                              <MenuItem mnemonicParsing="false" onAction="#animalreport" text="Animal Report" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" onAction="#removalreport" text="Removal Report">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#removalocationrep" text="Location Report" />
+                              <MenuItem mnemonicParsing="false" onAction="#requestdatereport" text="Request Date Report" />
+                              <MenuItem mnemonicParsing="false" onAction="#outcomereport" text="Outcome Report" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="175.0" fitWidth="191.0" layoutX="173.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-health-book.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="80.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Option from the top right hand menu above to get started">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
